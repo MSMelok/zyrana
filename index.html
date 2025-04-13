@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>ZYRANA | Luxury Perfumes</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/32x32.png">
+    <meta name="description" content="ZYRANA - Discover our luxury perfume collection with handcrafted fragrances that evoke emotion and captivate the senses.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="light-theme">
+    <div class="gradient-circle circle-1"></div>
+    <div class="gradient-circle circle-2"></div>
+    <div class="gradient-circle circle-3"></div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" class="gradient-start-color" />
+                            <stop offset="100%" class="gradient-end-color" />
+                        </linearGradient>
+                    </defs>
+                    <text x="10" y="40" fill="url(#logo-gradient)" font-family="'Playfair Display', serif" font-size="40" font-weight="700">ZYRANA</text>
+                </svg>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li class="theme-toggle-wrapper">
+                        <button id="theme-toggle-btn" aria-label="Toggle theme">
+                            <div class="theme-toggle-track">
+                                <div class="theme-toggle-icon moon-icon">
+                                    <i class="fas fa-moon"></i>
+                                </div>
+                                <div class="theme-toggle-slider"></div>
+                                <div class="theme-toggle-icon sun-icon">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="gradient-text fade-in">Discover Your Signature Scent</h1>
+                    <p class="subtitle fade-in delay-1">Handcrafted luxury fragrances that evoke emotion and captivate the senses</p>
+                    <div class="cta-buttons fade-in delay-2">
+                        <a href="#collection" class="btn btn-primary">Explore Collection</a>
+                        <a href="#about" class="btn btn-secondary">Our Story</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in delay-3">
+                    <div class="image-container">
+                        <img src="./assets/heroSection.jpg" alt="ZYRANA perfume">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="gradient-text">The ZYRANA Story</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-image fade-in">
+                        <div class="image-container">
+                            <img src="./assets/aboutSection.jpg" alt="About ZYRANA"">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3 class="fade-in">Crafting Emotions Through Scent</h3>
+                        <p class="fade-in delay-1">Founded in the heart of artisan perfumery, ZYRANA was born from a passion to create fragrances that tell a story. Our master perfumers blend time-honored techniques with innovative approaches to craft scents that transcend the ordinary.</p>
+                        <p class="fade-in delay-2">Each ZYRANA fragrance is meticulously composed using the finest ingredients sourced from around the world. From the delicate florals of Grasse to exotic spices of the East, we select only premium components that meet our exacting standards.</p>
+                        <p class="fade-in delay-3">Our commitment to sustainable luxury means we create beautiful scents with minimal environmental impact, using ethically sourced ingredients and eco-conscious packaging.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collection" class="collection-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="gradient-text">Our Collection</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="filter-controls fade-in">
+                    <div class="filter-group">
+                        <span class="filter-label">Filter By:</span>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="floral">Floral</button>
+                            <button class="filter-btn" data-filter="woody">Woody</button>
+                            <button class="filter-btn" data-filter="oriental">Oriental</button>
+                            <button class="filter-btn" data-filter="citrus">Citrus</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <span class="filter-label">Occasion:</span>
+                        <div class="filter-buttons">
+                            <button class="filter-btn" data-occasion="all">All</button>
+                            <button class="filter-btn" data-occasion="daily">Daily</button>
+                            <button class="filter-btn" data-occasion="evening">Evening</button>
+                            <button class="filter-btn" data-occasion="special">Special</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <span class="filter-label">Intensity:</span>
+                        <div class="filter-buttons">
+                            <button class="filter-btn" data-intensity="all">All</button>
+                            <button class="filter-btn" data-intensity="light">Light</button>
+                            <button class="filter-btn" data-intensity="medium">Medium</button>
+                            <button class="filter-btn" data-intensity="strong">Strong</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card fade-in" data-category="floral" data-occasion="daily" data-intensity="light"
+                         data-top-notes="Bergamot, Lemon, Mandarin" 
+                         data-heart-notes="Jasmine, Rose, Peony" 
+                         data-base-notes="Vanilla, White Musk, Sandalwood"
+                         data-price="125">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1589782431746-713d84eef3c4" alt="Enchanted Bloom perfume" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Enchanted Bloom</h3>
+                            <p class="product-description">A delicate bouquet of jasmine, rose, and peony with subtle notes of bergamot.</p>
+                            <div class="product-meta">
+                                <span class="product-category">Floral</span>
+                                <span class="product-occasion">Daily</span>
+                                <span class="product-intensity">Light</span>
+                            </div>
+                            <button class="btn btn-secondary view-details-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card fade-in" data-category="woody" data-occasion="evening" data-intensity="medium"
+                         data-top-notes="Pine, Cypress, Bergamot" 
+                         data-heart-notes="Cedarwood, Patchouli, Vetiver" 
+                         data-base-notes="Sandalwood, Amber, Vanilla"
+                         data-price="165">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1591375372226-3531cf2eb6d3" alt="Midnight Forest perfume" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Midnight Forest</h3>
+                            <p class="product-description">Rich cedarwood and sandalwood blend with amber and a touch of vanilla.</p>
+                            <div class="product-meta">
+                                <span class="product-category">Woody</span>
+                                <span class="product-occasion">Evening</span>
+                                <span class="product-intensity">Medium</span>
+                            </div>
+                            <button class="btn btn-secondary view-details-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card fade-in" data-category="oriental" data-occasion="special" data-intensity="strong"
+                         data-top-notes="Saffron, Cardamom, Cinnamon" 
+                         data-heart-notes="Rose, Jasmine, Amber" 
+                         data-base-notes="Oud, Musk, Leather"
+                         data-price="195">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1591375462469-62f189694738" alt="Amber Mystique perfume" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Amber Mystique</h3>
+                            <p class="product-description">Exotic spices and precious oud with deep notes of amber and musk.</p>
+                            <div class="product-meta">
+                                <span class="product-category">Oriental</span>
+                                <span class="product-occasion">Special</span>
+                                <span class="product-intensity">Strong</span>
+                            </div>
+                            <button class="btn btn-secondary view-details-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card fade-in" data-category="citrus" data-occasion="daily" data-intensity="light"
+                         data-top-notes="Lemon, Bergamot, Grapefruit" 
+                         data-heart-notes="Mint, Green Tea, Neroli" 
+                         data-base-notes="White Musk, Cedar, Vetiver"
+                         data-price="110">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1743915834274-1bf63b14fd3a" alt="Citrus Breeze perfume" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Citrus Breeze</h3>
+                            <p class="product-description">Sparkling lemon, bergamot, and grapefruit with hints of fresh mint.</p>
+                            <div class="product-meta">
+                                <span class="product-category">Citrus</span>
+                                <span class="product-occasion">Daily</span>
+                                <span class="product-intensity">Light</span>
+                            </div>
+                            <button class="btn btn-secondary view-details-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card fade-in" data-category="floral" data-occasion="evening" data-intensity="medium"
+                         data-top-notes="Black Currant, Mandarin, Bergamot" 
+                         data-heart-notes="Damask Rose, Patchouli, Geranium" 
+                         data-base-notes="White Amber, Musk, Vanilla"
+                         data-price="155">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1743915834302-59e283ed17cd" alt="Velvet Rose perfume" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Velvet Rose</h3>
+                            <p class="product-description">Luxurious damask rose with warm patchouli and a touch of black currant.</p>
+                            <div class="product-meta">
+                                <span class="product-category">Floral</span>
+                                <span class="product-occasion">Evening</span>
+                                <span class="product-intensity">Medium</span>
+                            </div>
+                            <button class="btn btn-secondary view-details-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card fade-in" data-category="woody" data-occasion="special" data-intensity="strong"
+                         data-top-notes="Saffron, Cinnamon, Lemon" 
+                         data-heart-notes="Rose, Geranium, Cardamom" 
+                         data-base-notes="Oud Wood, Leather, Amber"
+                         data-price="210">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1590736701530-f9e57920dd6f" alt="Royal Oud perfume" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Royal Oud</h3>
+                            <p class="product-description">Precious oud wood with saffron, rose, and an intriguing smoky finish.</p>
+                            <div class="product-meta">
+                                <span class="product-category">Woody</span>
+                                <span class="product-occasion">Special</span>
+                                <span class="product-intensity">Strong</span>
+                            </div>
+                            <button class="btn btn-secondary view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="gradient-text">Connect With Us</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info fade-in">
+                        <h3>Visit Our Boutique</h3>
+                        <p>Experience our full collection in person and receive personalized fragrance consultations from our expert staff.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Luxury Lane, Suite 500<br>Beverly Hills, CA 90210</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Monday - Saturday: 10am - 7pm<br>Sunday: 12pm - 5pm</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+1 (800) 555-SCENT</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>inquiries@zyrana.com</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg class="logo-svg" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="40" fill="url(#logo-gradient)" font-family="'Playfair Display', serif" font-size="40" font-weight="700">ZYRANA</text>
+                    </svg>
+                    <p>Luxury fragrances for the discerning individual</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#about">Our Story</a></li>
+                            <li><a href="https://msmelok.github.io/R4_2.0/" target="_blank">Site Developer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Customer Care</h4>
+                        <ul>
+                            <li><a href="#" id="shipping-returns-link">Shipping & Returns</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ZYRANA Perfumes EGY. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="product-modal-content">
+                <div class="product-modal-image">
+                    <img src="" alt="Product image" id="modal-product-image">
+                </div>
+                <div class="product-modal-info">
+                    <h2 class="product-modal-title" id="modal-product-title"></h2>
+                    <p class="product-modal-description" id="modal-product-description"></p>
+                    
+                    <div class="product-modal-details">
+                        <h4>Product Details</h4>
+                        <div class="product-detail-row">
+                            <span class="detail-label">Category:</span>
+                            <span id="modal-product-category"></span>
+                        </div>
+                        <div class="product-detail-row">
+                            <span class="detail-label">Occasion:</span>
+                            <span id="modal-product-occasion"></span>
+                        </div>
+                        <div class="product-detail-row">
+                            <span class="detail-label">Intensity:</span>
+                            <span id="modal-product-intensity"></span>
+                        </div>
+                        <div class="product-detail-row">
+                            <span class="detail-label">Size:</span>
+                            <span id="modal-product-size">50ml / 1.7 oz</span>
+                        </div>
+                        <div class="product-detail-row">
+                            <span class="detail-label">Top Notes:</span>
+                            <span id="modal-product-top-notes"></span>
+                        </div>
+                        <div class="product-detail-row">
+                            <span class="detail-label">Heart Notes:</span>
+                            <span id="modal-product-heart-notes"></span>
+                        </div>
+                        <div class="product-detail-row">
+                            <span class="detail-label">Base Notes:</span>
+                            <span id="modal-product-base-notes"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-modal-price">
+                        <span class="price-tag" id="modal-product-price">$195</span>
+                        <a href="#" class="btn btn-primary" id="order-now-btn">Order Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Shipping & Returns Modal -->
+    <div class="modal-overlay" id="shipping-modal">
+        <div class="modal-container policy-modal">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="policy-content">
+                <h2 class="gradient-text">Shipping & Returns Policy</h2>
+                
+                <div class="policy-section">
+                    <h3>Shipping Information</h3>
+                    <p>At ZYRANA, we aim to deliver your luxury fragrances as quickly and safely as possible.</p>
+                    
+                    <h4>Delivery Options</h4>
+                    <ul>
+                        <li><strong>Standard Shipping:</strong> 3-5 business days (Free on orders over $100)</li>
+                        <li><strong>Express Shipping:</strong> 1-2 business days ($15)</li>
+                        <li><strong>International Shipping:</strong> 7-14 business days (Fees vary by location)</li>
+                    </ul>
+                    
+                    <h4>Shipping Restrictions</h4>
+                    <p>Due to regulations regarding alcohol-based fragrances, we are unable to ship to certain countries. Please contact our customer service team for details about your specific location.</p>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Returns Policy</h3>
+                    <p>We want you to be completely satisfied with your ZYRANA purchase. If for any reason you are not, we offer a straightforward returns process.</p>
+                    
+                    <h4>Return Conditions</h4>
+                    <ul>
+                        <li>Returns accepted within 30 days of delivery</li>
+                        <li>Products must be in original, unopened packaging</li>
+                        <li>Gift sets must be returned complete</li>
+                        <li>Return shipping fees are the responsibility of the customer unless the return is due to our error</li>
+                    </ul>
+                    
+                    <h4>How to Initiate a Return</h4>
+                    <p>To begin the return process, please contact our customer service team at <strong>returns@zyrana.com</strong> with your order number and reason for return. We will provide you with a return authorization and detailed instructions.</p>
+                    
+                    <h4>Refund Process</h4>
+                    <p>Once we receive and inspect your return, your refund will be processed within 7 business days. Refunds will be issued to the original payment method.</p>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Special Orders & Custom Fragrances</h3>
+                    <p>Custom-blended fragrances and special orders are non-refundable due to their personalized nature. Please contact us with any concerns about your custom order.</p>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Questions?</h3>
+                    <p>If you have any questions about our shipping or returns policies, please don't hesitate to contact our customer service team at <strong>inquiries@zyrana.com</strong> or call us at <strong>+1 (800) 555-SCENT</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/filters.js" defer></script>
+    <script src="js/product-details.js" defer></script>
+</body>
+</html>

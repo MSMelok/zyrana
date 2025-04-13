@@ -1,0 +1,9 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0a5f55" class="gradient-start-color" />
+            <stop offset="100%" stop-color="#d4af37" class="gradient-end-color" />
+        </linearGradient>
+    </defs>
+    <text x="10" y="40" fill="url(#logo-gradient)" font-family="'Playfair Display', serif" font-size="40" font-weight="700">ZYRANA</text>
+</svg>
